@@ -25,11 +25,9 @@ public class Claim implements Serializable {
 	@ManyToOne
 	private Citizen citizen ; 
 	@ManyToOne
-
-	private Employee employee; 
-	@ManyToOne
-	private Employee admin;
-
+    private Employee employee; 
+	
+	
 
 	
 	private String response ;
@@ -40,12 +38,7 @@ public class Claim implements Serializable {
 	public void setResponse(String response) {
 		this.response = response;
 	}
-	public Employee getAdmin() {
-		return admin;
-	}
-	public void setAdmin(Employee admin) {
-		this.admin = admin;
-	}
+
 	public Citizen getCitizen() {
 		return citizen;
 	}

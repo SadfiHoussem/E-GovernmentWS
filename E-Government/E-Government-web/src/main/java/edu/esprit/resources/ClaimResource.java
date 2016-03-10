@@ -2,6 +2,7 @@ package edu.esprit.resources;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +12,7 @@ import edu.esprit.domain.Claim;
 import edu.esprit.services.gestion.claim.GestionClaimLocal;
 
 @Path("/claim")
+@Stateless
 public class ClaimResource {
 
 	@Inject

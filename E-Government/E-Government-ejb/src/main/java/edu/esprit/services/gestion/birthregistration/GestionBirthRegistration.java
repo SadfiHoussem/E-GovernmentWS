@@ -16,8 +16,10 @@ import edu.esprit.domain.BirthRegistration;
 @Stateless
 public class GestionBirthRegistration implements GestionBirthRegistrationRemote, GestionBirthRegistrationLocal {
 
-	@PersistenceContext(unitName="E-Goverment")EntityManager entityManager;
-    public GestionBirthRegistration() {
+	@PersistenceContext(unitName="E-Goverment")
+	EntityManager entityManager;
+    
+	public GestionBirthRegistration() {
         // TODO Auto-generated constructor stub
     }
 

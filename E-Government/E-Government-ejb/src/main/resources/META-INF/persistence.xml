@@ -26,25 +26,26 @@
       <!-- The datasource is deployed as <EAR>/META-INF/E-Government-ds.xml, you
          can find it in the source at ear/src/main/application/META-INF/E-Government-ds.xml -->
       <jta-data-source>java:/MySqlDS</jta-data-source>
-		<class>edu.esprit.domain.Admin</class>
-		<class>edu.esprit.domain.Agent</class>
-		<class>edu.esprit.domain.BirthRegistration</class>
-		<class>edu.esprit.domain.CareerObjectiveService</class>
-		<class>edu.esprit.domain.Categorie</class>
-		<class>edu.esprit.domain.CinRequest</class>
-		<class>edu.esprit.domain.Citizen</class>
-		<class>edu.esprit.domain.Claim</class>
-		<class>edu.esprit.domain.Client</class>
-		<class>edu.esprit.domain.Company</class>
-		<class>edu.esprit.domain.EDinarCard</class>
-		<class>edu.esprit.domain.EDinarServiceRequest</class>
-		<class>edu.esprit.domain.Employee</class>
-		<class>edu.esprit.domain.Etablishment</class>
-		<class>edu.esprit.domain.RequiredDocument</class>
-		<class>edu.esprit.domain.RoadTaxService</class>
-		<class>edu.esprit.domain.Service</class>
-		<class>edu.esprit.domain.TransportLine</class>
-		<class>edu.esprit.domain.University</class>
+      <class>edu.esprit.domain.Admin</class>
+      <class>edu.esprit.domain.Agent</class>
+      <class>edu.esprit.domain.BirthRegistration</class>
+      <class>edu.esprit.domain.CareerObjectiveService</class>
+      <class>edu.esprit.domain.Categorie</class>
+      <class>edu.esprit.domain.CinRequest</class>
+      <class>edu.esprit.domain.Citizen</class>
+      <class>edu.esprit.domain.Claim</class>
+      <class>edu.esprit.domain.Client</class>
+      <class>edu.esprit.domain.Company</class>
+      <class>edu.esprit.domain.EDinarCard</class>
+      <class>edu.esprit.domain.EDinarServiceRequest</class>
+      <class>edu.esprit.domain.Employee</class>
+      <class>edu.esprit.domain.Etablishment</class>
+      <class>edu.esprit.domain.RequiredDocument</class>
+      <class>edu.esprit.domain.RoadTaxService</class>
+      <class>edu.esprit.domain.Service</class>
+      <class>edu.esprit.domain.TransportLine</class>
+      <class>edu.esprit.domain.University</class>
+		
 		<properties>
 		    <property name="hibernate.show_sql" value="true"/>
     	    <property name="hibernate.format_sql" value="true"/>

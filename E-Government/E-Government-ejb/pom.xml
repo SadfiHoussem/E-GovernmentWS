@@ -127,8 +127,8 @@
 				<configuration>
 					<filename>${project.artifactId}.jar</filename>
 					<hostname>localhost</hostname>
-					<username>root</username>
-					<password>root</password>
+					<username>chaima</username>
+					<password>chaima</password>
 					<port>19990</port>
 				</configuration>
 				<executions>
