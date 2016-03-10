@@ -2,6 +2,7 @@ package edu.esprit.resources;
 
 import java.util.List;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -12,6 +13,7 @@ import edu.esprit.domain.Etablishment;
 import edu.esprit.services.gestion.etablishment.GestionEtablishmentLocal;
 
 @Path("/etablishment")
+@Stateless
 public class EtablishmentResource {
 	@Inject
 	GestionEtablishmentLocal myejb;

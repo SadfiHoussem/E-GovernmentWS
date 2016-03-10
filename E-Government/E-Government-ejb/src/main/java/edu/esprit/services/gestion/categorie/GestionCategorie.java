@@ -75,6 +75,8 @@ public class GestionCategorie implements GestionCategorieRemote, GestionCategori
 	public List<Categorie> findAllCategorie() {
 		
 			Query query=entityManager.createQuery("select c from Categorie c");
+			List<Categorie> l = query.getResultList();
+			System.out.println("hubuh"+l.get(0).getName());
 			return query.getResultList();
 		
 	}
