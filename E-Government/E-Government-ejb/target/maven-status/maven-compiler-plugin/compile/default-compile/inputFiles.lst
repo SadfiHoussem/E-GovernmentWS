@@ -20,6 +20,7 @@ C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\roadtaxservice\GestionRoadTaxService.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\BirthRegistration.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\Employee.java
+C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\client\GestionClientRemote.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\RequiredDocument.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\cinRequest\GestionCinRequestRemote.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\roadtaxservice\GestionRoadTaxServiceRemote.java
@@ -34,6 +35,7 @@ C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\claim\GestionClaim.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\requireddocument\GestionRequiredDocumentRemote.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\cinRequest\GestionCinRequestLocal.java
+C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\client\GestionClient.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\University.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\EDinarCard.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\CinRequest.java
@@ -57,5 +59,6 @@ C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\transportline\GestionTransportLineRemote.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\university\GestionUniversityLocal.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\domain\Etablishment.java
+C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\client\GestionClientLocal.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\careerobjectiveservice\GestionCareerObjectiveServiceRemote.java
 C:\Users\FBI\git\E-GovernmentWS\E-Government\E-Government-ejb\src\main\java\edu\esprit\services\gestion\edinarservicerequest\GestionEDinarServiceRequestRemote.java

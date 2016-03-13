@@ -45,6 +45,8 @@ edu\esprit\services\gestion\categorie\GestionCategorieLocal.class
 edu\esprit\services\gestion\edinarservicerequest\GestionEDinarServiceRequestLocal.class
 edu\esprit\services\gestion\requireddocument\GestionRequiredDocumentRemote.class
 edu\esprit\domain\Company.class
+edu\esprit\services\gestion\client\GestionClient.class
+edu\esprit\services\gestion\client\GestionClientLocal.class
 edu\esprit\services\gestion\edinarservicerequest\GestionEDinarServiceRequest.class
 edu\esprit\domain\Citizen.class
 edu\esprit\domain\Employee.class
@@ -52,6 +54,7 @@ edu\esprit\domain\Claim.class
 edu\esprit\services\gestion\employee\GestionEmployeeRemote.class
 edu\esprit\services\gestion\transportline\GestionTransportLine.class
 edu\esprit\domain\Agent.class
+edu\esprit\services\gestion\client\GestionClientRemote.class
 edu\esprit\services\gestion\careerobjectiveservice\GestionCareerObjectiveService.class
 edu\esprit\services\gestion\employee\GestionEmployeeLocal.class
 edu\esprit\services\gestion\careerobjectiveservice\GestionCareerObjectiveServiceLocal.class
