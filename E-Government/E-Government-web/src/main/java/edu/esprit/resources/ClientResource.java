@@ -7,6 +7,7 @@ import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 
 import edu.esprit.domain.CinRequest;
 import edu.esprit.domain.Client;
@@ -25,5 +26,12 @@ public class ClientResource {
 	public List<Client> getAllClient(){
 		return myejb.findAllClient();
 	}	
+	
+	@GET
+	@Produces("application/json")
+	@Path("/client")
+	public Client authentificateClient(@QueryParam("login") String login , @QueryParam("pwd") String password ){
+		return myejb.authentificate(login,password);
+	}
 
 }
