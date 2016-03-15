@@ -134,4 +134,56 @@ public class GestionClaim implements GestionClaimLocal , GestionClaimRemote {
 		}
 	}
 
+	@Override
+	public List<Claim> findClaimByCitizen(int id) {
+		Query query1=entityManager.createQuery(""
+				+ "select e from Client e WHERE e.idClient = :id");
+		query1.setParameter("id", id);
+		Citizen citizen = (Citizen) query1.getSingleResult();
+		Query query=entityManager.createQuery(""
+				+ "select e from Claim e WHERE e.citizen = :citizen");
+		query.setParameter("citizen", citizen);
+		try {
+			return query.getResultList();
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	@Override
+	public void addClaim(String subject, String textclaim, String mail, int idCitizen) {
+		Claim claim=new Claim();
+		claim.setSubject(subject);
+		claim.setTextClaim(textclaim);
+		claim.setMail(mail);
+		claim.setState("untreated");
+		Query query1=entityManager.createQuery(""
+				+ "select e from Client e WHERE e.idClient = :id");
+		query1.setParameter("id", idCitizen);
+		Citizen citizen = (Citizen) query1.getSingleResult();		
+		claim.setCitizen(citizen);
+		
+		try {
+			entityManager.persist(claim);
+		} catch (Exception e) {
+		}		
+	}
+
+	@Override
+	public List<Claim> findResponseByCitizen(int id) {
+		Query query1=entityManager.createQuery(""
+				+ "select e from Client e WHERE e.idClient = :id");
+		query1.setParameter("id", id);
+		Citizen citizen = (Citizen) query1.getSingleResult();
+		
+		Query query=entityManager.createQuery(""
+				+ "select e from Claim e WHERE e.citizen = :id and e.state = :sate");
+		query.setParameter("id", citizen).setParameter("sate", "treated");
+		try {
+			return query.getResultList();
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
 }

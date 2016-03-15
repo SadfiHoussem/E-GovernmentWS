@@ -1,5 +1,6 @@
 package edu.esprit.services.gestion.etablishment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -76,4 +77,29 @@ public class GestionEtablishment implements GestionEtablishmentRemote, GestionEt
 		Query query=entityManager.createQuery("select e from Etablishment e");
 		return query.getResultList();
 	}
+
+	@Override
+	public List<Etablishment> findEtablishmentType() {
+		Query query=entityManager.createQuery("select e from Etablishment e");
+
+		return query.getResultList();
+	}
+
+	@Override
+	public List<Etablishment> findAllEtablishmentsByLocationType(String type, String location) {
+		Query query=entityManager.createQuery(""
+				+ "select e from Etablishment e WHERE e.type = :type and e.location =:location");
+		query.setParameter("type", type);
+		query.setParameter("location", location);
+		System.out.println(query.toString());
+		try {
+			return query.getResultList();
+		} catch (Exception e) {
+			return null;
+		}
+		
+	}
+	
+	
+	
 }

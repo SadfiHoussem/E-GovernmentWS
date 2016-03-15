@@ -9,6 +9,9 @@ import edu.esprit.domain.Etablishment;
 @Local
 public interface GestionEtablishmentLocal {
 
+	
 	Etablishment findEtablishmentByName(String name);
 	List<Etablishment> findAllEtablishments();
+	List<Etablishment> findAllEtablishmentsByLocationType(String type, String location);
+	List<Etablishment> findEtablishmentType();
 }
